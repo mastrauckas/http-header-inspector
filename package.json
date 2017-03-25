@@ -1,0 +1,14 @@
+{
+  "name": "http-header-inspector",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Astrauckas",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.18.0"
+  }
+}
