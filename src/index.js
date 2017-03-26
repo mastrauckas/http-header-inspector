@@ -33,8 +33,8 @@ for (const httpRequest of config.requests) {
 }
 
 function setDefaults(configRequest) {
-  if (configRequest.strictSSL) {
-    configRequest.strictSSL = false;
+  if (!isBoolean(configRequest.strictSSL)) {
+    configRequest.strictSSL = true;
   }
   if (!isBoolean(configRequest.caching)) {
     configRequest.caching = true;
