@@ -2,7 +2,7 @@
 
 http-header-inspector is a utility that allows you to inspect http header traffic for a page.  To use http-header-inspector you must have a .http.header.inspect.config.json to configure the utility.
 
-Some of the utilities parameters for each request are:
+The parameters for the utility are:
 * **name:** The name you want to give a request configuration.  This is a _required_ field.
 * **url:** The page you wanto inspect. This is a _required_ field.
 * **strictSSL:** If https should use strict mode.  The default is _true_.
