@@ -47,6 +47,54 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Crim outside GeneralFunctions",
+      "url": "https://holmes.geninfo.com/crim/script/GeneralFunctions.js",
+      "strictSSL": false,
+      "waitBetweenRequestInSeconds": 3,
+      "caching": true,
+      "requestHeaders": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        "Accept-Encoding": "gzip, deflate, sdch, br",
+        "Accept-Language": "en-US,en;q=0.8",
+        "Cache-Control": "max-age=0",
+        "Connection": "keep-alive",
+        "Host": "holmes.geninfo.com",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+      },
+      "logRequests": [
+        {
+          "logFileRequest": {
+            "log": true,
+            "path": "./log",
+            "fileName": "MainHeaders.log",
+            "preAppendDateFormat": "YYYYMMDDHHssSSSS"
+          },
+          "logToConsole": true,
+          "headers": [
+            "etag",
+            "content-encoding",
+            "last-modified",
+            "accept-ranges",
+            "date",
+            "content-length",
+            "cache-control"
+          ]
+        },
+        {
+          "logFileRequest": {
+            "log": true,
+            "path": "./log",
+            "fileName": "AllHeaders.log",
+            "preAppendDateFormat": "YYYYMMDDHHssSSSS"
+          },
+          "logToConsole": false,
+          "headers": [
+            "all"
+          ]
+        }
+      ]
     }
   ]
 }
