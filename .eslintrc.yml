@@ -1,6 +1,5 @@
 env:
   node: true
-  commonjs: true
   es6: true
 extends:
   - eslint:recommended
@@ -15,10 +14,6 @@ rules:
     - error
     - 2
     - SwitchCase: 1
-  react/jsx-uses-react:
-    - error
-  react/jsx-uses-vars:
-    - error
   linebreak-style:
     - error
     - unix
