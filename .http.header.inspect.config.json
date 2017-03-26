@@ -2,6 +2,7 @@
   "requests": [
     {
       "name": "Crim outside CriminalFunctions",
+      "enabled": true,
       "url": "https://holmes.geninfo.com/crim/Script/CriminalFunctions.js",
       "strictSSL": false,
       "waitBetweenRequestInSeconds": 3,
@@ -50,6 +51,7 @@
     },
     {
       "name": "Crim outside GeneralFunctions",
+      "enabled": false,
       "url": "https://holmes.geninfo.com/crim/script/GeneralFunctions.js",
       "strictSSL": false,
       "waitBetweenRequestInSeconds": 3,
