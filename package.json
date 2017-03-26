@@ -10,5 +10,11 @@
   "license": "MIT",
   "devDependencies": {
     "eslint": "^3.18.0"
+  },
+  "dependencies": {
+    "fs-extra": "^2.1.2",
+    "moment": "^2.18.1",
+    "request": "^2.81.0",
+    "ssl-root-cas": "^1.2.3"
   }
 }
