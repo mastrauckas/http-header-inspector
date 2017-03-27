@@ -12,6 +12,7 @@ console.log('PID: ', process.pid);
 for (const httpRequest of config.requests) {
   try {
     validateRequest(httpRequest);
+    setDefaults(httpRequest);
   }
   catch (e) {
     console.log(`Validation failed with "${e}" so program must terminate.`);
@@ -26,15 +27,17 @@ process.on('SIGINT', function () {
   process.exit();
 });
 
-for (const httpRequest of config.requests) {
-  setDefaults(httpRequest);
+for (const httpRequest of config.requests.filter(r => r.enabled)) {
   httpRequest.timer = sendRequest(httpRequest);
   setupTimer(httpRequest);
 }
 
 function setDefaults(configRequest) {
-  if (configRequest.strictSSL) {
-    configRequest.strictSSL = false;
+  if (!isBoolean(configRequest.enabled)) {
+    configRequest.enabled = true;
+  }
+  if (!isBoolean(configRequest.strictSSL)) {
+    configRequest.strictSSL = true;
   }
   if (!isBoolean(configRequest.caching)) {
     configRequest.caching = true;
