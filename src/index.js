@@ -70,7 +70,7 @@ function setDefaults(configRequest) {
         }
 
         if (isNullOrWhitespaces(log.logFileRequest.fileName)) {
-          log.logFileRequest.preAppendDateFormat = 'preAppendDateFormat';
+          log.logFileRequest.preAppendDateFormat = 'YYYYMMDDHHmm';
         }
       }
     }
@@ -159,7 +159,7 @@ function logEntry(name, status, responseHeaders, logRequest) {
   const allHeadersToLog = logRequest.headers.map(h => h.toLowerCase());
   const headers = Object.keys(responseHeaders);
 
-  var logEntry = moment().format('YYYY:MM:DD:HH:ss:SSSS');
+  var logEntry = moment().format('YYYY:MM:DD:HH:mm:ss:SSSS');
   logEntry = logEntry.concat(` | name:"${name}" | status:${status}`);
   if (allHeadersToLog.includes('all')) {
     for (const h in headers) {
