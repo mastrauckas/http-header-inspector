@@ -4,6 +4,7 @@ http-header-inspector is a utility that allows you to inspect http header traffi
 
 The parameters for the utility are:
 * **name:** The name you want to give a request configuration.  This is a _required_ field.
+* **enabled:** Check if this configuration is enabled.  The default is _true_. 
 * **url:** The page you wanto inspect. This is a _required_ field.
 * **strictSSL:** If https should use strict mode.  The default is _true_.
 * **waitBetweenRequestInSeconds:** Time to delay between request.  The default is _60 seconds_.
@@ -17,4 +18,4 @@ The parameters for the utility are:
        * **logRequests.logFileRequest.log:** Should this object log.  The default is _true_.
        * **logRequests.logFileRequest.path:** Where to put the log file.  The default is _./log_.
        * **logRequests.logFileRequest.fileName:** File name to use.  The default is _AllHeaders.log_.
-       * **logRequests.logFileRequest.preAppendDateFormat:** Date to pre append to the file name.  The default is _YYYYMMDDHHssSSSS_.
+       * **logRequests.logFileRequest.preAppendDateFormat:** Date to pre append to the file name.  The default is _YYYYMMDDHHmm_.
