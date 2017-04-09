@@ -1,3 +1,7 @@
+# my ignores
+.DS_Store
+# end of my ignores
+
 
 # Created by https://www.gitignore.io/api/code,node
 

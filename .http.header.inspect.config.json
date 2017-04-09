@@ -22,7 +22,7 @@
             "log": true,
             "path": "./log",
             "fileName": "MainHeaders.log",
-            "preAppendDateFormat": "YYYYMMDDHHssSSSS"
+            "preAppendDateFormat": "YYYYMMDDHHmm"
           },
           "logToConsole": true,
           "headers": [
@@ -40,7 +40,7 @@
             "log": true,
             "path": "./log",
             "fileName": "AllHeaders.log",
-            "preAppendDateFormat": "YYYYMMDDHHssSSSS"
+            "preAppendDateFormat": "YYYYMMDDHHmm"
           },
           "logToConsole": false,
           "headers": [
@@ -71,7 +71,7 @@
             "log": true,
             "path": "./log",
             "fileName": "MainHeaders.log",
-            "preAppendDateFormat": "YYYYMMDDHHssSSSS"
+            "preAppendDateFormat": "YYYYMMDDHHmm"
           },
           "logToConsole": true,
           "headers": [
@@ -89,7 +89,7 @@
             "log": true,
             "path": "./log",
             "fileName": "AllHeaders.log",
-            "preAppendDateFormat": "YYYYMMDDHHssSSSS"
+            "preAppendDateFormat": "YYYYMMDDHHmm"
           },
           "logToConsole": false,
           "headers": [
